@@ -1,0 +1,33 @@
+{
+  "name": "autohub",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "browsersync": "0.0.1-security",
+    "gulp-cli": "^2.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "",
+    "csso": "",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "",
+    "gulp-changed": "",
+    "gulp-csso": "",
+    "gulp-htmlmin": "",
+    "gulp-inline-source": "",
+    "gulp-load-plugins": "",
+    "gulp-notify": "",
+    "gulp-plumber": "",
+    "gulp-sass": "",
+    "gulp-size": "",
+    "gulp-sourcemaps": "",
+    "gulp-util": ""
+  },
+  "scripts": "",
+  "repository": "",
+  "author": "",
+  "license": "",
+  "bugs": "",
+  "homepage": ""
+}

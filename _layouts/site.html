@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="site">
+            <input type="checkbox" id="nav-main-toggle" name="nav-main-toggle">
+            <header class="site-header">
+                <nav class="navigation"></nav>
+            </header>
+            <main class="site-content">
+                {{content}}
+            </main>
+            <footer class="site-footer">
+            </footer>
+        </div>
+    </body>
+
+</html>
