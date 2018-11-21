@@ -17,7 +17,7 @@ title: AutoHub
 email: autohub@web.bg
 description: >- # this means to ignore newlines until "baseurl:"
   Everything you need to know about cars. In one single page.
-baseurl: "/site" # the subpath of your site, e.g. /blog
+baseurl: "/deyan-stoyanov.github.io" # the subpath of your site, e.g. /blog
 url: "http://deyan-stoyanov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: autohub
 github_username:  autohub

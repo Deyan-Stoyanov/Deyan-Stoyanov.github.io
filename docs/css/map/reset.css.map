@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"../reset.css","sourcesContent":[]}
+{"version":3,"sources":["reset.scss","reset.css"],"names":[],"mappings":"AAAA,C,CCEA,O,CADA,O,CDEI,Q,CACA,S","file":"../reset.css","sourcesContent":["*,\r\n*:before,\r\n*::after {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n","*,\n*:before,\n*::after {\n  margin: 0;\n  padding: 0; }\n"]}

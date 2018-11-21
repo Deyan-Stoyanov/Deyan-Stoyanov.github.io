@@ -3,42 +3,59 @@ var browserSync = require('browser-sync').create();
 
 var install = require("gulp-install");
 
+var sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+
 gulp.src(['./bower.json', './package.json'])
-.pipe(install());
+	.pipe(install());
 
 var $ = require('gulp-load-plugins')();
 
 var path = {
-	SCSS_SRC	: './scss/**/*.scss',
-	SCSS_DST	: './css',
-	CSS_JKDST	: './docs/css',
-	HTML_SRC	: ['./*.html','./_post/*.*','./_layouts/*.*', './_includes/*.*'],
+	SCSS_SRC: './scss/**/*.scss',
+	SCSS_DST: './css',
+	CSS_JKDST: './docs/css',
+	HTML_SRC: ['./*.html', './_post/*.*', './_layouts/*.*', './_includes/*.*'],
 }
 
 gulp.task('scss', function () {
 
-	gulp.src( path.SCSS_SRC )
-	.pipe($.sourcemaps.init())
-	.pipe($.sass())
-	.pipe($.autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
-	.pipe($.size({ showFiles: true }))
-	.pipe($.csso())
-	.pipe($.size({ showFiles: true }))
-	.pipe($.sourcemaps.write('map'))
-	.pipe(gulp.dest( path.SCSS_DST ))
-	.pipe(gulp.dest( path.CSS_JKDST ))
-	.pipe(browserSync.stream({ match: '**/*.css' }))
-	;
+	gulp.src(path.SCSS_SRC)
+		.pipe($.sourcemaps.init())
+		.pipe($.sass())
+		.pipe($.autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
+		.pipe($.size({
+			showFiles: true
+		}))
+		.pipe($.csso())
+		.pipe($.size({
+			showFiles: true
+		}))
+		.pipe($.sourcemaps.write('map'))
+		.pipe(gulp.dest(path.SCSS_DST))
+		.pipe(gulp.dest(path.CSS_JKDST))
+		.pipe(browserSync.stream({
+			match: '**/*.css'
+		}));
 
 });
 
+gulp.task('scss:watch', function () {
+	gulp.watch('./scss/**/*.scss', ['scss']);
+});
+
 gulp.task('jekyll', function () {
-	require('child_process').exec('jekyll build --baseurl=', {stdio: 'inherit'}, function(){
+	require('child_process').exec('jekyll build --baseurl=', {
+		stdio: 'inherit'
+	}, function () {
 		browserSync.reload();
 	});
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', function () {
 
 	browserSync.init({
 		server: {
@@ -52,4 +69,4 @@ gulp.task('serve', function() {
 
 });
 
-gulp.task('default', ['scss','jekyll','serve']);
+gulp.task('default', ['scss', 'jekyll', 'serve']);

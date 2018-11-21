@@ -11,7 +11,6 @@
     "gulp-cli": "^2.0.1",
     "gulp-install": "^1.1.0",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4"
   },
   "devDependencies": {
@@ -26,10 +25,11 @@
     "gulp-load-plugins": "",
     "gulp-notify": "",
     "gulp-plumber": "",
-    "gulp-sass": "",
+    "gulp-sass": "^4.0.2",
     "gulp-size": "",
     "gulp-sourcemaps": "",
-    "gulp-util": ""
+    "gulp-util": "",
+    "node-sass": "^4.10.0"
   },
   "scripts": "",
   "repository": "",
