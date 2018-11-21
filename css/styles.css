@@ -1,2 +1,2 @@
-@import url(https://use.fontawesome.com/releases/v5.5.0/css/all.css);@import url(buttons.scss);@import url(forms.scss);@import url(navigation.scss);@import url(reset.scss);@import url(layout.scss);@import url(typography.scss);@import url(animations.scss);html{background-color:red}
+@import url(https://use.fontawesome.com/releases/v5.5.0/css/all.css);@import url("buttons.css");@import url("forms.css");@import url("navigation.css");@import url("reset.css");@import url("layout.css");@import url("typography.css");@import url("animations.css");
 /*# sourceMappingURL=map/styles.css.map */
