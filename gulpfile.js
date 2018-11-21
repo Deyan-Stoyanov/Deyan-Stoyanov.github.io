@@ -1,6 +1,11 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
+var install = require("gulp-install");
+
+gulp.src(['./bower.json', './package.json'])
+.pipe(install());
+
 var $ = require('gulp-load-plugins')();
 
 var path = {
@@ -11,7 +16,7 @@ var path = {
 }
 
 gulp.task('scss', function () {
-	
+
 	gulp.src( path.SCSS_SRC )
 	.pipe($.sourcemaps.init())
 	.pipe($.sass())
@@ -24,7 +29,7 @@ gulp.task('scss', function () {
 	.pipe(gulp.dest( path.CSS_JKDST ))
 	.pipe(browserSync.stream({ match: '**/*.css' }))
 	;
-	
+
 });
 
 gulp.task('jekyll', function () {
@@ -34,17 +39,17 @@ gulp.task('jekyll', function () {
 });
 
 gulp.task('serve', function() {
-	
+
 	browserSync.init({
 		server: {
 			baseDir: "./docs/"
 		}
 	});
-	
+
 	gulp.watch(path.SCSS_SRC, ['scss']);
 	gulp.watch(path.HTML_SRC, ['jekyll']);
 	gulp.watch(path.HTML_SRC).on('change', browserSync.reload);
-	
+
 });
 
 gulp.task('default', ['scss','jekyll','serve']);
