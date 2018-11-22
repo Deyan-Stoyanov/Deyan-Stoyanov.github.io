@@ -2,13 +2,27 @@
 layout: site
 ---
 
-<ul class="listing posts">
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <span class="title">{{ post.title }}</span>
-            <span class="date">{{ post.date | date_to_string }}</span>
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="site-main">
+    <div class="index-articles">
+        <p>Check out our latest car related artickes!</p>
+        <div class="articles-buttons">
+            <a href="{{site.baseurl}}/news/" class="button">News</a>
+            <a href="{{site.baseurl}}/sport/" class="button">Sport</a>
+            <a href="{{site.baseurl}}/tips-and-tricks/" class="button">Tips & Tricks</a>
+        </div>
+    </div>
+    <div class="index-gallery">
+        <p>You can also go through our new gallery section.</p>
+        <a href="{{site.baseurl}}/gallery/">Gallery</a>
+    </div>
+    <div class="index-marketplace">
+        <p>Looking for a new car? Or maybe want to sell your old one? Our new functionality allows you both!</p>
+        <a href="{{site.baseurl}}/marketplace/">Marketplace</a>
+    </div>
+    <div class="index-contacts-about">
+        <p>Have a question? Feel free to contact us!</p>
+        <div class="contacts-buttons">
+            <a href="{{site.baseurl}}/contacts/">Contacts</a>
+        </div>
+    </div>
+</div>
