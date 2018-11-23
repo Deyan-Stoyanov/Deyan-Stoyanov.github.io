@@ -1,0 +1,56 @@
+@keyframes slideInLeft {
+    0% {
+        transform: translate(0, -0.5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.site-header {
+    background-color: rgb(252, 251, 216);
+    padding: 2rem;
+
+    .navigation {
+        padding-top: 2rem;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            li {
+                border: 5px solid transparent;
+                height: 2rem;
+                padding-left: 1rem;
+                animation: slideInLeft 0.5s 1 ease forwards;
+            }
+
+            li:hover>a {
+                color: rgb(163, 6, 6);
+            }
+
+            li:hover>ul {
+                transform: translateY(0);
+                transform: translateX(-3rem);
+                animation: slideInLeft 0.5s 1 ease forwards;
+            }
+
+            li>ul {
+                display: block;
+                opacity: 0;
+                position: absolute;
+                width: 10rem;
+                transform: translateY(2rem);
+                text-align: left;
+                background-color: rgb(252, 251, 216);
+                border-radius: 10%;
+                border-top: 2rem solid transparent;
+            }
+        }
+    }
+}

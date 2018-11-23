@@ -21,7 +21,7 @@ html {
 }
 
 li {
-    list-style-type: none outside;
+    list-style-type: none;
 }
 
 a {
@@ -39,19 +39,11 @@ a {
     html {
         font-size: var(--font-size-phablet, 14px);
     }
-
-    .site {
-        padding: 1rem;
-    }
 }
 
 @media screen and (min-width: 960px) {
     html {
         font-size: var(--font-size-tablet-small, 15px);
-    }
-
-    .site {
-        padding: 2rem;
     }
 }
 
@@ -59,19 +51,11 @@ a {
     html {
         font-size: var(--font-size-tablet-large, 16px);
     }
-
-    .site {
-        padding: 3rem;
-    }
 }
 
 @media screen and (min-width: 1024px) {
     html {
         font-size: var(--font-size-laptop, 18px);
-    }
-
-    .site {
-        padding: 4rem;
     }
 }
 

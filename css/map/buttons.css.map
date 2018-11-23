@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"../buttons.css","sourcesContent":[]}
+{"version":3,"sources":["buttons.scss"],"names":[],"mappings":"AAAA,O,CACI,oB,CACA,Y,CACA,qB,CACA,U,CACA,kB,CAGJ,a,CACI,qB,CACA,a","file":"../buttons.css","sourcesContent":[".button{\r\n    padding: 0.7rem 1.2rem;\r\n    margin: 0.5rem;\r\n    background-color: rgb(238, 238, 238);\r\n    color: rgb(0, 0, 0);\r\n    border-radius: 50px;\r\n}\r\n\r\n.button:hover{\r\n    background-color: rgb(0, 0, 0);\r\n    color: rgb(245, 245, 245);\r\n}\r\n"]}
