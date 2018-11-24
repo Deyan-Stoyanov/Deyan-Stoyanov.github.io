@@ -5,10 +5,26 @@ footer {
         justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
+        padding: 2rem 0;
+        background-color: rgb(252, 251, 216);
 
-        section:nth-child(1) ul {
-            columns: 2;
-            padding: 1rem;
+        section:nth-child(1) {
+            ul {
+                columns: 2;
+                padding: 1rem;
+                li{
+                    padding: 0.3rem;
+                }
+
+                li:hover a{
+                    color: rgb(163, 6, 6);
+                    text-decoration: underline;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
         }
 
         section:nth-child(2) ul {
@@ -57,7 +73,7 @@ footer {
             color: rgb(240, 240, 240);
         }
 
-        a:hover{
+        a:hover {
             color: rgb(255, 153, 0);
         }
     }

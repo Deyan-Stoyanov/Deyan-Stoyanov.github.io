@@ -29,6 +29,11 @@ a {
     color: rgb(0, 0, 0);
 }
 
+h2{
+    text-align: center;
+    padding: 1rem 0;
+}
+
 @media screen and (min-width: 480px) {
     html {
         font-size: var(--font-size-smartphone-large, 13px);
