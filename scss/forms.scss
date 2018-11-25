@@ -1,0 +1,55 @@
+i {
+    color: rgba($color: black, $alpha: 0.6);
+    font-size: 1.2rem;
+}
+
+form {
+    border: none;
+    text-align: center;
+
+    fieldset {
+        border: none;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    fieldset:hover i{
+        color: red;
+    }
+
+    fieldset:nth-child(4) i{
+        padding: 2rem;
+    }
+
+    input {
+        border: none;
+        color: rgba($color: black, $alpha: 0.6);
+        font-size: 1.2rem;
+        background-color: rgb(247, 247, 247);
+        text-align: start;
+        border-radius: 50px;
+        width: 25rem;
+        padding: 0.5rem 0.5rem 0.5rem 3rem;
+    }
+
+    i {
+        position: absolute;
+        padding: 0.6rem 0 0 1rem;
+    }
+
+    textarea {
+        border: none;
+        color: rgba($color: black, $alpha: 0.6);
+        font-size: 1.2rem;
+        background-color: rgb(247, 247, 247);
+        text-align: start;
+        border-radius: 50px;
+        width: 25rem;
+        padding: 2rem 2rem 2rem 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .send {
+        text-align: center;
+    }
+}
