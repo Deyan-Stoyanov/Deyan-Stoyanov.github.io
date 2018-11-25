@@ -1,0 +1,51 @@
+.about {
+    padding: 2rem 6rem;
+
+    >p {
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: lighter;
+        text-align: center;
+        padding: 3rem 0 2rem 0;
+    }
+
+    h3:before {
+        content: "";
+        position: absolute;
+        left: 44%;
+        height: 1px;
+        width: 10rem;
+        margin-top: -4rem;
+        background-color: black;
+    }
+
+    h3+p{
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+        }
+
+        .person>* {
+            padding: 0.5rem 0;
+        }
+
+        .occupation {
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }
+}

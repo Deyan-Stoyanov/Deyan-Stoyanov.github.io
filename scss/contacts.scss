@@ -1,0 +1,42 @@
+.contacts h2 {
+    padding-top: 4rem;
+}
+
+.contacts-container+p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contacts-container div p {
+    display: inline;
+}
+
+.contacts-container div {
+    padding: 1rem;
+    text-align: justify;
+    padding-left: 35%;
+    font-size: 120%;
+}
+
+.contacts-container div i {
+    padding-right: 2rem;
+}
+
+.contacts {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/contacts.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover 100%;
+    padding-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 640px) {
+    .contacts * {
+        text-align: center;
+    }
+
+    .contacts-container div {
+        padding-left: 0;
+        text-align: center;
+    }
+}
