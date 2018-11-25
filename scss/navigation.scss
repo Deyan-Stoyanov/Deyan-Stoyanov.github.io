@@ -10,6 +10,11 @@
     }
 }
 
+#nav-checkbox,
+#toggle {
+    display: none;
+}
+
 .site-header {
     background-color: rgb(252, 251, 216);
     padding: 2rem;
@@ -30,11 +35,13 @@
                 animation: slideInLeft 0.5s 1 ease forwards;
             }
 
-            li:hover>a {
+            li:hover>a,
+            li:active>a {
                 color: rgb(163, 6, 6);
             }
 
-            li:hover>ul {
+            li:hover>ul,
+            li:active>ul {
                 transform: translateY(0);
                 transform: translateX(-3rem);
                 animation: slideInLeft 0.5s 1 ease forwards;
@@ -50,7 +57,44 @@
                 background-color: rgb(252, 251, 216);
                 border-radius: 10%;
                 border-top: 2rem solid transparent;
+                margin-left: -1.4rem;
             }
         }
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    #toggle {
+        display: block;
+        text-align: center;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #nav-checkbox:checked+header nav {
+        display: block;
+        position: relative;
+        padding: 0;
+        text-align: center;
+    }
+
+    #nav-checkbox:checked+header nav>ul {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    #nav-checkbox:checked+header nav ul li ul{
+        margin-top: -6.5rem;
+        position: relative;
+        padding-left: 15rem;
+        background: none;
     }
 }

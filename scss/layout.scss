@@ -10,6 +10,7 @@
 
         p {
             padding-bottom: 6rem;
+            text-align: center;
         }
     }
 
@@ -37,5 +38,17 @@
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-contacts.jpg") center right;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .articles-buttons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .site-main p{
+        padding: 1rem;
     }
 }

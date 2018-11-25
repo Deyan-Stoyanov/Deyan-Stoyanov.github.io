@@ -10,10 +10,12 @@
 
     <body>
         <div class="site">
+            <input type="checkbox" id="nav-checkbox" name="nav-checkbox">
             <header class="site-header">
                 <h1><a href="{{site.baseurl}}/">AutoHub</a></h1>
                 <h3>Everything you need to know about cars. In one single page.</h3>
-                <nav class="navigation">
+                <label for="nav-checkbox" id="toggle"><i class="fas fa-bars"></i></label>
+                <nav class="navigation" id="navigation">
                     <ul>
                         <li><a href="{{site.baseurl}}/">Home</a></li>
                         <li>

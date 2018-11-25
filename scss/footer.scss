@@ -1,4 +1,8 @@
 footer {
+    p {
+        text-align: center;
+    }
+
     main {
         display: flex;
         flex-direction: row;
@@ -12,18 +16,15 @@ footer {
             ul {
                 columns: 2;
                 padding: 1rem;
-                li{
+
+                li {
                     padding: 0.3rem;
                 }
 
-                li:hover a{
+                li:hover a {
                     color: rgb(163, 6, 6);
                     text-decoration: underline;
                 }
-            }
-
-            p {
-                text-align: center;
             }
         }
 
