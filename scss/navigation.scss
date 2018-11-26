@@ -29,7 +29,7 @@
             justify-content: space-evenly;
 
             li {
-                border: 5px solid transparent;
+                border: 1px solid transparent;
                 height: 2rem;
                 padding-left: 1rem;
                 animation: slideInLeft 0.5s 1 ease forwards;
@@ -38,6 +38,10 @@
             li:hover>a,
             li:active>a {
                 color: rgb(163, 6, 6);
+                border-top: 1px solid rgb(163, 6, 6);
+                border-bottom: 1px solid rgb(163, 6, 6);
+                border-radius: 8px;
+                padding: 0.5rem 0;
             }
 
             li:hover>ul,
@@ -73,6 +77,11 @@
         padding: 1rem 0 1rem 1rem;
     }
 
+    #toggle:hover,
+    #toggle:active {
+        color: rgb(163, 6, 6);
+    }
+
     nav {
         display: none;
     }
@@ -91,10 +100,12 @@
         padding-bottom: 0;
     }
 
-    #nav-checkbox:checked+header nav ul li ul{
-        margin-top: -6.5rem;
+    #nav-checkbox:checked+header nav ul li ul {
+        margin-top: -3.5rem;
         position: relative;
-        padding-left: 15rem;
+        margin-left: 15rem;
         background: none;
+        padding-top: 0;
+        border-top: 0;
     }
 }

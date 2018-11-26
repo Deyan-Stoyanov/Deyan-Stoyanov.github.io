@@ -15,14 +15,14 @@
     h3:before {
         content: "";
         position: absolute;
-        left: 44%;
+        left: calc(50vw - 6rem);
         height: 1px;
-        width: 10rem;
+        width: 12rem;
         margin-top: -4rem;
         background-color: black;
     }
 
-    h3+p{
+    h3+p {
         margin-bottom: 3rem;
         text-align: center;
     }
@@ -39,11 +39,14 @@
             border-radius: 50%;
         }
 
-        .person>* {
-            padding: 0.5rem 0;
+        .person {
+            padding: 0 1rem;
+            >* {
+                padding: 0.5rem 0;
+            }
         }
 
-        .occupation {
+        .person .occupation {
             font-style: italic;
             font-weight: lighter;
         }

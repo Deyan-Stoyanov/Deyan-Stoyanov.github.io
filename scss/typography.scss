@@ -8,8 +8,8 @@
     --font-size-desktop: 20px;
     --desktop-size: 1600px;
     --laptop-size: 1024px;
-    --tablet-large-size: 1600px;
-    --tablet-small-size: 960px;
+    --tablet-large-size: 960px;
+    --tablet-small-size: 768px;
     --phablet-size: 640px;
     --smartphone-large-size: 480px;
     --smartphone-small-size: 320px;
@@ -46,7 +46,7 @@ h2{
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
     html {
         font-size: var(--font-size-tablet-small, 15px);
     }

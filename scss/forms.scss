@@ -25,10 +25,11 @@ form {
         border: none;
         color: rgba($color: black, $alpha: 0.6);
         font-size: 1.2rem;
-        background-color: rgb(247, 247, 247);
+        background-color: rgb(255, 232, 182);
         text-align: start;
         border-radius: 50px;
         width: 25rem;
+        max-width: 70vw;
         padding: 0.5rem 0.5rem 0.5rem 3rem;
     }
 
@@ -41,12 +42,13 @@ form {
         border: none;
         color: rgba($color: black, $alpha: 0.6);
         font-size: 1.2rem;
-        background-color: rgb(247, 247, 247);
+        background-color: rgb(255, 234, 190);
         text-align: start;
         border-radius: 50px;
         width: 25rem;
         padding: 2rem 2rem 2rem 4rem;
         margin-bottom: 2rem;
+        max-width: 70%;
     }
 
     .send {
