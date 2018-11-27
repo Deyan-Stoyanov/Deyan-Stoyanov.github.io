@@ -4,3 +4,15 @@ title: news
 permalink: /news/
 ---
 <h2>News</h2>
+
+<ul class="listing posts">
+	{% for post in site.posts %}
+	<li>
+		<a href="{{ site.baseurl }}{{ post.url }}">
+			<h3 class="title">{{ post.title }}</h3>
+		</a>
+            <span class="date">{{ post.date | date_to_string }}</span>
+            <p>{{ post.content }}</p>
+        </li>
+	{% endfor %}
+</ul>

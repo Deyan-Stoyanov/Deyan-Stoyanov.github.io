@@ -1,0 +1,15 @@
+ul.listing.posts{
+    li{
+        padding: 2rem 0;
+        text-align: center;
+        a:before {
+            content: "";
+            position: absolute;
+            left: calc(50vw - 15rem);
+            height: 1px;
+            width: 30rem;
+            margin-top: -1rem;
+            background-color: black;
+        }
+    }
+}
