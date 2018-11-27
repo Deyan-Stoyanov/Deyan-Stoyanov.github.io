@@ -3,5 +3,18 @@ layout: site
 title: Tips & Tricks
 permalink: /tips-and-tricks/
 ---
+<div class="tips-and-tricks">
+    <h2>Tips & Tricks</h2>
 
-<h2>Tips & Tricks</h2>
+    <ul class="listing posts">
+        {% for post in site.posts %}
+        {% if post.categories contains 'tips-and-tricks' %}
+        <li>
+            <h3 class="title">{{ post.title }}</h3>
+            <span class="date">{{ post.date | date_to_string }}</span>
+            <div>{{ post.content }}</div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

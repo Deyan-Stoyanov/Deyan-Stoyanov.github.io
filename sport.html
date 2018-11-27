@@ -3,5 +3,18 @@ layout: site
 title: Sport
 permalink: /sport/
 ---
+<div class="sport">
+    <h2>Sport</h2>
 
-<h2>Sport</h2>
+    <ul class="listing posts">
+        {% for post in site.posts %}
+        {% if post.categories contains 'sport' %}
+        <li>
+            <h3 class="title">{{ post.title }}</h3>
+            <span class="date">{{ post.date | date_to_string }}</span>
+            <div>{{ post.content }}</div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
