@@ -5,4 +5,17 @@ permalink: /marketplace/
 ---
 
 
-<h2>Marketplace</h2>
+<div class="marketplace">
+    <h2>Marketplace</h2>
+    <ul class="listing marketplace">
+        {% for post in site.posts %}
+        {% if post.categories contains 'marketplace' %}
+        <li>
+            <h3 class="title">{{ post.title }}</h3>
+            <div>{{ post.content }}</div>
+            <a class="button">I'm interested!</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
