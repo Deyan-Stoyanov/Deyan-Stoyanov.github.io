@@ -1,12 +1,13 @@
-.not-found-container{
-    height: 50vh;
+.not-found-container {
+    padding: 4rem 0 10rem 0;
     text-align: center;
-    background: linear-gradient(rgba(59, 216, 255, 0.6), rgba(171, 238, 255, 0.6)) bottom;
-    h2{
-        font-size: 3rem;
-        padding-top: 4rem;
+
+    h2 {
+        font-size: 2rem;
+        padding: 1rem;
     }
-    p{
+
+    p {
         padding: 1rem;
     }
 }

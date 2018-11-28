@@ -1,2 +1,2 @@
-.not-found-container{height:50vh;text-align:center;background:-webkit-gradient(linear,left top,left bottom,from(rgba(59,216,255,.6)),to(rgba(171,238,255,.6))) bottom;background:linear-gradient(rgba(59,216,255,.6),rgba(171,238,255,.6)) bottom}.not-found-container h2{font-size:3rem;padding-top:4rem}.not-found-container p{padding:1rem}
+.not-found-container{padding:4rem 0 10rem;text-align:center}.not-found-container h2{font-size:2rem;padding:1rem}.not-found-container p{padding:1rem}
 /*# sourceMappingURL=map/404.css.map */

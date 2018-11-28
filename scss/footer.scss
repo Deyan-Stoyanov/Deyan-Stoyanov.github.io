@@ -3,7 +3,7 @@ footer {
         text-align: center;
     }
 
-    main {
+    .site-footer-main {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -12,7 +12,7 @@ footer {
         padding: 2rem 0;
         background-color: rgb(255, 206, 151);
 
-        section:nth-child(1) {
+        section.links {
             ul {
                 columns: 2;
                 padding: 1rem;
@@ -23,12 +23,13 @@ footer {
 
                 li:hover a {
                     color: rgb(163, 6, 6);
-                    text-decoration: underline;
+                    border-bottom: 1px dashed rgb(163, 6, 6);
+                    transition: 0.5s ease-in-out;
                 }
             }
         }
 
-        section:nth-child(2) ul {
+        section.social ul {
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -41,31 +42,37 @@ footer {
 
             li:nth-child(1):hover>a {
                 color: rgb(28, 100, 255);
+                transition: 0.5s ease-in-out;
             }
 
             li:nth-child(2):hover>a {
                 color: rgb(255, 53, 164);
+                transition: 0.5s ease-in-out;
             }
 
             li:nth-child(3):hover>a {
                 color: rgb(255, 0, 0);
+                transition: 0.5s ease-in-out;
             }
 
             li:nth-child(4):hover>a {
                 color: rgb(28, 164, 255);
+                transition: 0.5s ease-in-out;
             }
 
             li:nth-child(5):hover>a {
                 color: rgb(255, 28, 28);
+                transition: 0.5s ease-in-out;
             }
 
             li:nth-child(6):hover>a {
                 color: rgb(240, 44, 44);
+                transition: 0.5s ease-in-out;
             }
         }
     }
 
-    footer {
+    .site-footer-footer {
         background-color: black;
         padding: 1rem;
         text-align: center;
@@ -76,6 +83,7 @@ footer {
 
         a:hover {
             color: rgb(255, 153, 0);
+            transition: 0.5s ease-in-out;
         }
     }
 }

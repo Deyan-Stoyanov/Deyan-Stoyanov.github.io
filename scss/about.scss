@@ -7,7 +7,6 @@
     }
 
     h3 {
-        font-weight: lighter;
         text-align: center;
         padding: 3rem 0 2rem 0;
     }
@@ -47,14 +46,10 @@
         .person {
             padding: 0 1rem;
 
-            >* {
+            img,
+            p {
                 margin: 0.5rem 0;
             }
-        }
-
-        .person .occupation {
-            font-style: italic;
-            font-weight: lighter;
         }
     }
 }

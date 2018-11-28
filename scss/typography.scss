@@ -1,45 +1,54 @@
-:root {
-    --font-size-initial: 12px;
-    --font-size-smartphone-large: 13px;
-    --font-size-phablet: 14px;
-    --font-size-tablet-small: 15px;
-    --font-size-tablet-large: 16px;
-    --font-size-laptop: 18px;
-    --font-size-desktop: 20px;
-    --desktop-size: 1600px;
-    --laptop-size: 1024px;
-    --tablet-large-size: 960px;
-    --tablet-small-size: 768px;
-    --phablet-size: 640px;
-    --smartphone-large-size: 480px;
-    --smartphone-small-size: 320px;
-}
-
 html {
     font-size: var(--font-size-initial, 12px);
     font-family: "Montserrat", sans-serif;
-}
 
-li {
-    list-style-type: none;
-}
+    li {
+        list-style-type: none;
+    }
 
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
 
-h2 {
-    text-align: center;
-    padding: 1rem 0;
-}
+    h1,
+    h2 {
+        font-family: "Cormorant SC", serif;
+        font-weight: normal;
+    }
 
-ul.listing.posts {
+    h1 {
+        font-size: 250%;
+    }
 
-    span.date {
-        font-style: italic;
+    h2 {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 150%;
+    }
+
+    ul.listing.posts {
+
+        span.date {
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }
+
+    ::placeholder {
         font-weight: lighter;
+    }
+
+    .about {
+        h3 {
+            font-weight: lighter;
+        }
+
+        .person .occupation {
+            font-style: italic;
+            font-weight: lighter;
+        }
     }
 }
 
@@ -58,6 +67,14 @@ ul.listing.posts {
 @media screen and (min-width: 768px) {
     html {
         font-size: var(--font-size-tablet-small, 15px);
+
+        h1 {
+            font-size: 300%;
+        }
+
+        h2 {
+            font-size: 200%;
+        }
     }
 }
 

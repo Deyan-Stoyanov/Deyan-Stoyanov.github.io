@@ -1,41 +1,51 @@
-.contacts h2 {
-    padding-top: 4rem;
-}
-
-.contacts>p {
-    padding: 2rem 0;
-
-}
-
-.contacts>*,
-.contacts-container * {
-    text-align: center;
-}
-
-.contacts-container div p {
-    display: inline;
-}
-
-.contacts-container div {
-    padding: 1rem;
-    font-size: 120%;
-}
-
-.contacts-container div i {
-    padding-right: 2rem;
-}
-
 .contacts {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/contacts.jpg") bottom;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 2rem;
     overflow: hidden;
+    text-align: center;
+
+    h2 {
+        padding-top: 4rem;
+    }
+
+    >p {
+        padding: 2rem 0;
+
+    }
+
+    i {
+        color: rgba( black, 0.6);
+        font-size: 1.2rem;
+    }
+}
+
+.contacts-container {
+    div p {
+        display: inline;
+    }
+
+    div {
+        padding: 1rem;
+        font-size: 120%;
+
+        i {
+            padding-right: 2rem;
+        }
+    }
 }
 
 
 @media screen and (max-width: 640px) {
-    .contacts-container div {
-        padding-left: 0;
+    .contacts-container {
+
+        div {
+            padding-left: 0;
+
+            i {
+                padding-right: 0.5rem;
+            }
+        }
     }
 }

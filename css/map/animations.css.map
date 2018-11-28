@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"../animations.css","sourcesContent":[]}
+{"version":3,"sources":["animations.scss"],"names":[],"mappings":"A,AAAA,+BACI,E,CACI,qC,CAAA,6B,CACA,S,CAGJ,E,CACI,gC,CAAA,wB,CACA,W,AARR,uBACI,E,CACI,qC,CAAA,6B,CACA,S,CAGJ,E,CACI,gC,CAAA,wB,CACA,W","file":"../animations.css","sourcesContent":["@keyframes slideInLeft {\r\n    0% {\r\n        transform: translate(0, -0.5rem);\r\n        opacity: 0;\r\n    }\r\n\r\n    100% {\r\n        transform: translate(0, 0);\r\n        opacity: 1;\r\n    }\r\n}\r\n"]}

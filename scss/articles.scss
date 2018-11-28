@@ -8,7 +8,7 @@ ul.listing.posts {
         h3,
         span.date {
             display: block;
-            padding: 1rem 0;
+            padding: 1rem;
         }
 
         >div {
@@ -78,13 +78,13 @@ ul.listing.posts:before {
             left: 0;
         }
 
-        >li:last-child:after{
+        >li:last-child:after {
             width: 0;
         }
     }
 
     ul.listing.posts:before {
-        width:100vw;
+        width: 100vw;
         left: 0;
     }
 }

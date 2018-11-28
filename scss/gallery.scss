@@ -22,7 +22,7 @@
 
         img {
             box-sizing: border-box;
-            border: 5px solid  transparent;
+            border: 5px solid transparent;
             max-width: 100%;
             object-fit: contain;
         }
@@ -50,7 +50,7 @@
     div:hover,
     div:active {
         img {
-            border: 5px solid  rgb(163, 6, 6);
+            border: 5px solid rgb(163, 6, 6);
             transition: 1s ease-in-out;
         }
     }
@@ -64,9 +64,6 @@
         padding: 2rem;
         grid-template-columns: repeat(2, minmax(240px, 1fr));
 
-        // div {
-        //     position: relative;
-        // }
         h2 {
             grid-column-end: 3;
         }

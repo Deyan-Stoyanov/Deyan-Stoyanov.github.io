@@ -3,7 +3,8 @@
 
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ site.title }}</title>
         <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     </head>
@@ -37,8 +38,8 @@
                 {{content}}
             </main>
             <footer class="site-footer">
-                <main>
-                    <section>
+                <div class="site-footer-main">
+                    <section class="links">
                         <p>Site Links</p>
                         <ul>
                             <li><a href="{{site.baseurl}}/">Home</a></li>
@@ -51,7 +52,7 @@
                             <li><a href="{{site.baseurl}}/contacts/">Contacts</a></li>
                         </ul>
                     </section>
-                    <section>
+                    <section class="social">
                         <p>Find us on: </p>
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -62,10 +63,10 @@
                             <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                         </ul>
                     </section>
-                </main>
-                <footer class="site-footer-footer">
+                </div>
+                <div class="site-footer-footer">
                     <p><a href="{{site.baseurl}}/">© 2018 Autohub</a></p>
-                </footer>
+                </div>
             </footer>
         </div>
     </body>

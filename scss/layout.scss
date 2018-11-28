@@ -3,7 +3,7 @@
 
     .site-main {
 
-        >div {
+        >article {
             height: 55vh;
             width: 100%;
             display: flex;
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 640px) {
     .site-main {
-        >div {
+        >article {
             height: 40vh;
 
             p {
