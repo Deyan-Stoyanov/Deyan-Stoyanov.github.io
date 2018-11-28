@@ -43,6 +43,7 @@ ul.listing.posts {
         left: calc(50vw - 15rem);
         height: 1px;
         width: 30rem;
+        max-width: 106vw;
         margin-top: 1rem;
         background-color: black;
     }
@@ -55,11 +56,12 @@ ul.listing.posts:before {
     left: calc(50vw - 15rem);
     height: 1px;
     width: 30rem;
+    max-width: 106vw;
     margin-top: -1rem;
     background-color: black;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 640px) {
     ul.listing.posts {
         >li {
             >div {
@@ -70,5 +72,19 @@ ul.listing.posts:before {
                 }
             }
         }
+
+        >li:after {
+            width: 100vw;
+            left: 0;
+        }
+
+        >li:last-child:after{
+            width: 0;
+        }
+    }
+
+    ul.listing.posts:before {
+        width:100vw;
+        left: 0;
     }
 }

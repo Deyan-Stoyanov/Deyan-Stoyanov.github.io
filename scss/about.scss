@@ -37,12 +37,18 @@
 
         img {
             border-radius: 50%;
+            border: 3px solid transparent;
+        }
+
+        img:hover {
+            border: 3px solid rgb(163, 6, 6);
         }
 
         .person {
             padding: 0 1rem;
+
             >* {
-                padding: 0.5rem 0;
+                margin: 0.5rem 0;
             }
         }
 

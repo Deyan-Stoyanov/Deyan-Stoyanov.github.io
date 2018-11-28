@@ -18,6 +18,13 @@
         background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-articles.jpg") bottom;
         background-repeat: no-repeat;
         background-size: cover;
+
+        .articles-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     .index-gallery {
@@ -42,13 +49,13 @@
 }
 
 @media screen and (max-width: 640px) {
-    .articles-buttons {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+    .site-main {
+        >div {
+            height: 40vh;
 
-    .site-main p {
-        padding: 1rem;
+            p {
+                padding: 1rem;
+            }
+        }
     }
 }
