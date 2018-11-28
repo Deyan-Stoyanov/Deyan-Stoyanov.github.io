@@ -1,50 +1,55 @@
-.site-main {
-    >div {
-        height: 55vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 140%;
+.site-content {
+    background-color: rgb(255, 248, 233);
 
-        p {
-            padding-bottom: 6rem;
-            text-align: center;
-        }
-    }
+    .site-main {
 
-    .index-articles {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-articles.jpg") bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        .articles-buttons {
+        >div {
+            height: 55vh;
+            width: 100%;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: 140%;
+
+            p {
+                padding-bottom: 6rem;
+                text-align: center;
+            }
         }
-    }
 
-    .index-gallery {
-        background-size: contain;
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-gallery.jpg") center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+        .index-articles {
+            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-articles.jpg") bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
 
-    .index-marketplace {
-        background-size: contain;
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-marketplace.jpg") center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+            .articles-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
-    .index-contacts-about {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-contacts.jpg") center right;
-        background-repeat: no-repeat;
-        background-size: cover;
+        .index-gallery {
+            background-size: contain;
+            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-gallery.jpg") center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .index-marketplace {
+            background-size: contain;
+            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-marketplace.jpg") center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .index-contacts-about {
+            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-contacts.jpg") center right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 }
 

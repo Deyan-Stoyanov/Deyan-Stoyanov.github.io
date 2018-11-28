@@ -44,7 +44,7 @@
                     text-align: left;
                     background-color: rgb(255, 206, 151);
                     border-radius: 10%;
-                    border-top: 1rem solid transparent;
+                    border-top: 1em solid transparent;
                     margin-left: -1rem;
                 }
             }
@@ -87,32 +87,14 @@
                 transition: 0.6s ease-out;
             }
 
-            li:hover>,
+            li:hover,
             li:active {
                 ul {
                     transform: translateY(0);
                     transform: translateX(-3rem);
                     opacity: 0;
                     animation: slideInLeft 0.5s 1 ease forwards;
-
-                    li {
-                        opacity: 0;
-                        animation: slideInLeft 0.5s 1 ease forwards;
-                    }
-
-                    li:nth-child(1) {
-                        animation-delay: 0;
-                    }
-
-                    li:nth-child(2) {
-                        animation-delay: 0.2s;
-                    }
-
-                    li:nth-child(3) {
-                        animation-delay: 0.4s;
-                    }
                 }
-
             }
         }
     }
