@@ -11,17 +11,24 @@
         padding-top: 2rem;
 
         ul {
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-around;
 
             li {
                 border: 1px solid transparent;
                 height: 2rem;
                 padding-left: 1rem;
                 opacity: 0;
-                animation: slideInLeft 0.5s 1 ease forwards;
+                animation: slideInLeft 0.3s 1 ease forwards;
+
+                a {
+                    padding: 0 0.2rem;
+                    margin: 0.2rem 0;
+                }
 
                 ul {
                     display: block;
@@ -70,9 +77,9 @@
                 color: rgb(163, 6, 6);
                 border-top: 1px solid rgb(163, 6, 6);
                 border-bottom: 1px solid rgb(163, 6, 6);
-                border-radius: 8px;
-                padding: 0.5rem 0;
-                transition: 0.6s ease-out;
+                border-radius: 6px;
+                transition: 0.4s ease-out;
+                padding: 0.2rem;
             }
 
             li:hover,

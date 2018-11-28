@@ -14,7 +14,6 @@
             background-color: rgb(255, 232, 189);
             margin: 0 auto;
             width: 20vw;
-            border: 3px solid rgba(black, 0.5);
             border-radius: 25px;
             padding-bottom: 2rem;
             text-align: center;
@@ -28,7 +27,7 @@
                 img {
                     max-width: 100%;
                     width: auto;
-                    height: 40%;
+                    height: auto;
                 }
 
                 p {
@@ -42,9 +41,8 @@
         }
 
         li:hover {
-            transform: translateY(-0.5rem);
-            border: 3px solid rgb(163, 6, 6);
-            transition: 1s ease;
+            box-shadow: 0 0 3pt 2pt rgb(163, 6, 6);
+            transition: 0.5s ease-in-out;
         }
 
         li:nth-last-child(-n+3) {
@@ -76,10 +74,6 @@
 
             li {
                 width: 80%;
-            }
-
-            li:hover {
-                transform: translateY(0);
             }
 
             li:last-child {

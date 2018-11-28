@@ -37,13 +37,13 @@ ul.listing.posts {
         }
     }
 
-    >li:after {
+    >li:not(:last-child):after {
         content: "";
         position: absolute;
         left: calc(50vw - 15rem);
         height: 1px;
         width: 30rem;
-        max-width: 106vw;
+        max-width: 105%;
         margin-top: 1rem;
         background-color: black;
     }
@@ -56,7 +56,7 @@ ul.listing.posts:before {
     left: calc(50vw - 15rem);
     height: 1px;
     width: 30rem;
-    max-width: 106vw;
+    max-width: 100%;
     margin-top: -1rem;
     background-color: black;
 }
@@ -73,18 +73,14 @@ ul.listing.posts:before {
             }
         }
 
-        >li:after {
-            width: 100vw;
-            left: 0;
-        }
-
-        >li:last-child:after {
-            width: 0;
+        >li:not(:last-child):after {
+            left: 10vw;
+            width: 80vw;
         }
     }
 
     ul.listing.posts:before {
-        width: 100vw;
         left: 0;
+        width: 100%;
     }
 }

@@ -28,16 +28,20 @@ html {
         font-size: 150%;
     }
 
+    .site-content {
+        .site-main {
+            >article {
+                font-size: 140%;
+            }
+        }
+    }
+
     ul.listing.posts {
 
         span.date {
             font-style: italic;
             font-weight: lighter;
         }
-    }
-
-    ::placeholder {
-        font-weight: lighter;
     }
 
     .about {
@@ -49,6 +53,12 @@ html {
             font-style: italic;
             font-weight: lighter;
         }
+    }
+
+    input,
+    textarea {
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
     }
 }
 

@@ -1,16 +1,16 @@
 .site-content {
-    background-color: rgb(255, 248, 233);
+    background-color: rgb(255, 249, 211);
 
     .site-main {
 
         >article {
             height: 55vh;
+            max-height: 100vh;
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-size: 140%;
 
             p {
                 padding-bottom: 6rem;
@@ -53,13 +53,16 @@
     }
 }
 
-@media screen and (max-width: 640px) {
-    .site-main {
-        >article {
-            height: 40vh;
+@media screen and (max-width: 780px) {
+    .site-content {
+        .site-main {
+            >article {
+                height: 70vh;
 
-            p {
-                padding: 1rem;
+                p {
+                    margin: 1rem;
+                    padding-bottom: 1rem;
+                }
             }
         }
     }

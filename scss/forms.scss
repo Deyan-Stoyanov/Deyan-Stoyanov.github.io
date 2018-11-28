@@ -13,7 +13,8 @@ form {
         max-width: 100vw;
     }
 
-    fieldset:hover i {
+    fieldset:hover i,
+    fieldset:hover ::placeholder {
         color: red;
     }
 
