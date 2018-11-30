@@ -41,6 +41,7 @@
                     border-radius: 10%;
                     border-top: 1em solid transparent;
                     margin-left: -1rem;
+                    pointer-events: none;
                 }
             }
 
@@ -89,6 +90,7 @@
                     transform: translateX(-3rem);
                     opacity: 0;
                     animation: slideInLeft 0.5s 1 ease forwards;
+                    pointer-events: inherit;
                 }
             }
         }

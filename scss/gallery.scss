@@ -19,12 +19,15 @@
         max-width: 100%;
         position: relative;
         overflow: hidden;
+        display: inline-block;
+        transition: 1s ease-in-out;
 
         img {
+            display: block;
             box-sizing: border-box;
-            border: 5px solid transparent;
             max-width: 100%;
             object-fit: contain;
+            transition: 1s ease-in-out;
         }
     }
 
@@ -58,9 +61,12 @@
 
     div:hover,
     div:active {
+        transition: 1s ease-in-out;
+        box-shadow: 0 0 0 5px rgb(163, 6, 6);
+
         img {
-            border: 5px solid rgb(163, 6, 6);
             transition: 1s ease-in-out;
+            transform: scale(1.2);
         }
     }
 }

@@ -16,6 +16,12 @@ form {
     fieldset:hover i,
     fieldset:hover ::placeholder {
         color: red;
+        transition: color 0.2s ease-in-out;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline-width: 0;
     }
 
     fieldset:nth-child(4) i {
@@ -41,7 +47,7 @@ form {
 
     textarea {
         border: none;
-        color: rgba($color: black, $alpha: 0.6);
+        color: rgba(black, 0.6);
         font-size: 1.2rem;
         background-color: rgb(255, 234, 190);
         text-align: start;

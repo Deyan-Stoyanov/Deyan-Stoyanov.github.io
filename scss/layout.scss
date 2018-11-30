@@ -13,13 +13,16 @@
             justify-content: center;
 
             p {
-                padding-bottom: 6rem;
+                margin-bottom: 6rem;
                 text-align: center;
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.85);
+                border-radius: 25px;
             }
         }
 
         .index-articles {
-            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-articles.jpg") bottom;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home-articles.jpg") bottom;
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -33,20 +36,20 @@
 
         .index-gallery {
             background-size: contain;
-            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-gallery.jpg") center;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home-gallery.jpg") center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         .index-marketplace {
             background-size: contain;
-            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-marketplace.jpg") center;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home-marketplace.jpg") center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         .index-contacts-about {
-            background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/home-contacts.jpg") center right;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/home-contacts.jpg") center right;
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -60,8 +63,7 @@
                 height: 70vh;
 
                 p {
-                    margin: 1rem;
-                    padding-bottom: 1rem;
+                    margin: 1rem 1rem 2rem 1rem;
                 }
             }
         }
